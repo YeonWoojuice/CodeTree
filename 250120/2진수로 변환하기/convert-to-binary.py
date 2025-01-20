@@ -1,4 +1,5 @@
-n=29
+n = int(input())
+
 digit=[]
 
 while True:
@@ -11,5 +12,3 @@ while True:
 
 for digit in digit[::-1]:
     print(digit, end="")
-    
-
