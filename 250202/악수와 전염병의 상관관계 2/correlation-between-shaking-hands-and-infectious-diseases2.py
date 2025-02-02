@@ -2,25 +2,24 @@ N, K, P, T = map(int, input().split())
 handshakes = [tuple(map(int, input().split())) for i in range(T)]
 
 handshakes.sort(key=lambda x: x[0])
+# lambda 매개변수: 함수 안에 들어갈 내용  
 
 A = [0]*(N+1)
 
 arr = [P] 
 
 for a,b,c in handshakes:
-    if b in arr:
+    if b in arr and c in arr:
         A[b]+=1
         A[c]+=1
-        arr.append(c)
-    elif c in arr:
+    elif b in arr and A[b]<K:
         A[b]+=1
+        arr.append(c)
+    elif c in arr and A[c]<K:
         A[c]+=1
         arr.append(b)
-    else:
-        A[b]+=1
-        A[c]+=1
 
-for i in range(0,N):
+for i in range(1,N+1):
     if i in arr:
         print(1, end="")
     else: 
