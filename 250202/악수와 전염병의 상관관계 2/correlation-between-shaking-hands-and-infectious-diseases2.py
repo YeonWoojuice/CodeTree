@@ -12,10 +12,10 @@ for a,b,c in handshakes:
     if b in arr and c in arr:
         A[b]+=1
         A[c]+=1
-    elif b in arr and A[b]<K:
+    elif b in arr :
         A[b]+=1
         arr.append(c)
-    elif c in arr and A[c]<K:
+    elif c in arr :
         A[c]+=1
         arr.append(b)
 
