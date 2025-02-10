@@ -8,7 +8,7 @@ def return_number(n):
     result=tens+ones
     return result
 
-if (return_number(n)%5==0):
+if (return_number(n)%5==0 and return_number(n)%2==0):
     print("Yes")
 else:
     print("No")
