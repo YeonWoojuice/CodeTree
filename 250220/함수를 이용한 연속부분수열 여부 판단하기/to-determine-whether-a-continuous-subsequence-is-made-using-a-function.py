@@ -5,13 +5,14 @@ b = list(map(int, input().split()))
 
 
 def continue_section(n1, n2):
-    for i in range(0,n1-n2):
-        if (a[i:i+n2:1]==b):
+    if (n1-n2>0):
+        for i in range(0,n1-n2):
+            if (a[i:i+n2:1]==b):
+                return True
+    elif (n1==n2):
+        if a==b:
             return True
 
-
-
-    
 if (continue_section(n1,n2)==True):
     print("Yes")
 else:
