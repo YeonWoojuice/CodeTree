@@ -3,8 +3,8 @@ Y, M, D = map(int, input().split())
 def countYear(Y,M,D):
     if ((Y%4==0 and (Y%100!=0)) or (Y%4==0 and (Y%100!=0) and (Y%400==0))):
         if (0<M<8):
-            if (0<M<2):
-                if (0<D<31):
+            if (M==1):
+                if (0<D<32):
                     return "Winter"
             elif (M==2):
                 if (0<D<30):
@@ -41,7 +41,7 @@ def countYear(Y,M,D):
     else:
         if (0<M<8):
             if (0<M<2):
-                if (0<D<31):
+                if (0<D<32):
                     return "Winter"
             elif (M==2):
                 if (0<D<29):
