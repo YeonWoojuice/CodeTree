@@ -5,17 +5,19 @@ cnt=0
 def addmin(cnt,m,A):
 
     while (m>0):
-        if (m%2==0):
-            m//=2
+        mid=m+1
+        if (mid%2==0):
+            mid//=2
             cnt+=A[m]
 
         else:
-            m-=1
+            mid-=1
             cnt+=A[m]
 
     print(cnt)
 
 addmin(cnt,m,A)
+
 
 
 
