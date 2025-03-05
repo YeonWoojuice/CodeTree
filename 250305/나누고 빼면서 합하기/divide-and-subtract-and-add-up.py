@@ -6,7 +6,7 @@ def addmin(cnt,m,A):
 
     while (m>0):
         if (m%2==0):
-            m=//2
+            m//=2
             cnt+=A[m]
 
         else:
