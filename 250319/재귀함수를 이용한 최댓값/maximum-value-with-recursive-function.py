@@ -2,11 +2,9 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 def maximum(n,arr): #4 #3 #2
-    if (arr[n-1]>arr[n-2]):  # 9>7 #9>5 #9>1
-        arr[n-2]=arr[n-1] # 7=9 #5=9 #1=9
-        if n==2:
-            print(arr[0])
-    else:
+    if (n>=2):
+        if (arr[n-1]>arr[n-2]):  # 9>7 #9>5 #9>1
+            arr[n-2]=arr[n-1] # 7=9 #5=9 #1=9
         if n==2:
             print(arr[0])
 
