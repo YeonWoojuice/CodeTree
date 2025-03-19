@@ -11,11 +11,11 @@ def maximum(n,arr):
 def f(n,arr):
     if (n==1):
         print(arr[0])
-    if (n==2):
+    elif (n==2):
         return maximum(n,arr)
-
-    maximum(n,arr) 
-    f(n-1,arr)
+    else:
+        maximum(n,arr) 
+        f(n-1,arr)
     
 f(n,arr)
     
