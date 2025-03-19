@@ -7,11 +7,11 @@ def maximum(n,arr): #4 #3 #2
             arr[n-2]=arr[n-1] # 7=9 #5=9 #1=9
         if n==2:
             print(arr[0])
-    else:
-        print(arr[0])
 
 
 def f(n,arr):
+    if (n==1):
+        return arr[0]
     if (n==2):
         return maximum(n,arr)
 
