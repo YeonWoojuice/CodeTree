@@ -11,7 +11,7 @@ def maximum(n,arr): #4 #3 #2
 
 def f(n,arr):
     if (n==1):
-        return arr
+        print(arr)
     if (n==2):
         return maximum(n,arr)
 
