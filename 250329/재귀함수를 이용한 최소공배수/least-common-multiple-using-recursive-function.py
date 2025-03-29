@@ -13,5 +13,8 @@ def func(n,arr):
     arr[n-1]=lcm(arr[n],arr[n-1])
     func(n-1,arr)
 
-n-=1
-func(n,arr)
+if n==1:
+    print(arr[0])
+else:
+    n-=1
+    func(n,arr)
