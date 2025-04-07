@@ -37,25 +37,13 @@ print(중앙값,end=' ')
 # 함수 호출
 median(n, arr)
 '''
-
-# 입력
 n = int(input())
 arr = list(map(int, input().split()))
 
-def median(n, arr):
-    current_numbers = []  # 중앙값 계산용 리스트
+for i in range(n):
+    if i%2==0:
+        sort_arr=sorted(arr[:i+1])
+        print(sort_arr[i//2],end=" ")
 
-    for i in range(n):
-        # 현재 숫자를 정렬된 상태로 삽입
-        bisect.insort(current_numbers, arr[i])
-
-        # 홀수 번째 원소 처리
-        if (i + 1) % 2 != 0:
-            # 중앙값 계산
-            med = current_numbers[(i + 1) // 2 ]
-            print(med, end=' ')
-
-
-median(n, arr)
 
 
