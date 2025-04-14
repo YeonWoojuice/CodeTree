@@ -1,3 +1,3 @@
-a,b=map(int, input().split(" "))
+a, b = map(int, input().split())
 print(a+b,end=" ")
-print(a+b/2)
+print(f"{(a + b) / 2}")
