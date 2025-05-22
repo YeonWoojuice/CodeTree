@@ -1,6 +1,6 @@
 N=int(input())
-arr=map(int, input().split(" "))
+arr=list(map(int, input().split(" ")))
 
-for i in range(N):
-    if arr[N-i]%2==0:
-        print(arr[N-i],end=" ")
+for i in range(0,N):
+    if arr[N-i-1]%2==0:
+        print(arr[N-i-1],end=" ")
