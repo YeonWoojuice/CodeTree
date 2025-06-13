@@ -11,10 +11,10 @@
 ## 진행상태
 
 - **Python**  
-  `Notice Mid` 파트 진행 중
+  `Notice Mid` 진행 중
 
 - **Java**  
-  `Codetree101`부터 시작!
+  `Codetree101`부터 시작
 
 ---
 
