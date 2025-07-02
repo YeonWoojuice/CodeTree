@@ -11,7 +11,7 @@ n = int(input())
 students=[]
 for _ in range(n):
     name, sc1, sc2, sc3= tuple(input().split())
-    res=sc1+sc2+sc3
+    res=int(sc1)+int(sc2)+int(sc3)
     students.append(Student(name, int(sc1), int(sc2), int(sc3), int(res)))
 
 students.sort(key = lambda x: (x.res))
