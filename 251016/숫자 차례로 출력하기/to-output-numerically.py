@@ -2,9 +2,9 @@ N=int(input())
 
 def func2(N):
     if N==0:
-        return 0
-    print(N-(N-1),end=" ")
+        return 
     func2(N-1)
+    print(N,end=" ")
 
 def func(N):
     if N==0:
