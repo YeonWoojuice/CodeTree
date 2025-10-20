@@ -6,6 +6,8 @@ def f(n,arr):
         if arr[n-1]>arr[n-2]:
             arr[n-2]=arr[n-1]
             return arr[n-2]
+        else:
+            return arr[n-2]
     else:
         if arr[n-1]>arr[n-2]:
             arr[n-2]=arr[n-1]
