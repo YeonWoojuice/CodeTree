@@ -5,7 +5,3 @@ for i in range(2):
 for j in range(4):
     print(sum(list(arr[i][j] for i in range(2)))/2,end=" ")
 print(sum(arr))
-
-
-
-
